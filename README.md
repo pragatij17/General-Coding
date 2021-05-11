@@ -1,5 +1,5 @@
 # General-Coding
-Experimenting with types of languages, algorithms, framework and tools.
+Experimenting with types of languages, algorithms, frameworks and tools.
 
 ## Languages
 - Python
