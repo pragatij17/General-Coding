@@ -1,14 +1,15 @@
 # Day 1
 ## Task 1
 Draw the following pattern by taking n number of rows as input from the user:
-* * * * * * * * * 
- * * * * * * * *
-   * * * * * *
-    * * * * *
-     * * * *
-      * * *
-       * *
-        *
+
+        * * * * * * * * * 
+         * * * * * * * *
+           * * * * * *
+            * * * * *
+             * * * *
+              * * *
+               * *
+                *
 ## Task 2
 Create a program to calculate simple interest and compound interest, take input from the user.
 ## Task 3
