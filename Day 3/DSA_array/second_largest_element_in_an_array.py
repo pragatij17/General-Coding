@@ -1,5 +1,12 @@
-# Largest Element in An Array
+# Second Largest Element in An Array
 def largest_num(array:list)->int:
+    largest_no=-99999
+    largest_index=0
+    for index in range(0,len(array)):
+        if(largest_no<array[index]):
+            largest_no=array[index]
+            largest_index=index
+    del array[largest_index]
     largest_no=-99999
     largest_index=0
     for index in range(0,len(array)):

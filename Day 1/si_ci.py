@@ -1,3 +1,4 @@
+# Create a program to calculate simple interest and compound interest, take input from the user.
 def simple_interest(p, r, t): 
     si = (p * r * t)/100
     return si

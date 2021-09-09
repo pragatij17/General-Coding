@@ -1,4 +1,4 @@
-# Day 1
+# Day-01
 ## Task 1
 Draw the following pattern by taking n number of rows as input from the user:
 
@@ -16,9 +16,8 @@ Create a program to calculate simple interest and compound interest, take input 
 GeeksForGeeks DSA course:
 
 Arrays:
-
-Largest Element in An Array
+- Largest Element in An Array
 ## Task 4
 HackerEarth:
 
-Problem 1: https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/is-zoo-f6f309e7/
+Problem: https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/is-zoo-f6f309e7/
