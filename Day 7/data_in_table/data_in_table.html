@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html>
+<header>
+    <h1>Weather Report of Vadodara</h1>
+    <p>Posted by Pragati Jain</p>
+</header>
+<body>
+
+<table class = 'table table-stripped'>
+    <tbody id='data'>
+    </tbody>
+</table>
+<script>
+    fetch("data_in_table.json").then(
+        res=>{
+            res.json().then(
+                data=>{
+                    console.log(data);
+                    if(data.length > 0){
+                        var temp="";
+                        data.forEach((u)=>{
+                            temp +="<tr>";
+                            temp +="<td>"+u.type+"</td>";
+                            temp +="<td>"+u.query+"</td>";
+                            temp +="<td>"+u.language+"</td>";
+                            temp +="<td>"+u.unit+"</td></tr>";
+                        })
+                        document.getElementById("data").innerHTML = temp;
+
+                    }
+
+                }
+            )
+        }
+    )
+</script>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<header>
+    <h1>Weather Report of Vadodara</h1>
+    <p>Posted by Pragati Jain</p>
+</header>
+
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const txt = '{"request":{"type":"City","query":"Vadodara, India","language":"en","unit":"m"},"location":{"name":"Vadodara","country":"India","region":"Gujarat","lat":"22.300","lon":"73.200","timezone_id":"Asia\/Kolkata","localtime":"2021-05-21 02:56","localtime_epoch":1621565760,"utc_offset":"5.50"},"current":{"observation_time":"09:26 PM","temperature":29,"weather_code":116,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"],"weather_descriptions":["Partly cloudy"],"wind_speed":23,"wind_degree":219,"wind_dir":"SW","pressure":1005,"precip":0,"humidity":66,"cloudcover":4,"feelslike":32,"uv_index":1,"visibility":10,"is_day":"no"}}'
+const obj = JSON.parse(txt);
+document.getElementById("demo").innerHTML =  obj.request.type + ", " + obj.request.query + ", " + obj.request.language + ", " + obj.request.unit;
+document.getElementById("demo1").innerHTML =  obj.location.name + ", " +  obj.location.country + ", " +  obj.location.region + ", " +  obj.location.lat + ", " +  obj.location.lon + ", " +  obj.location.timezone_id + ", " +  obj.location.localtime + ", " + obj.location.localtime_epoch + ", " + obj.location.utc_offset;
+document.getElementById("demo2").innerHTML =  obj.current.observation_time + ", " + obj.current.temperature + ", " + obj.current.weather_code + ", " + obj.current.weather_icons + ", " + obj.current.weather_descriptions + ", " + obj.current.wind_speed + ", " + obj.current.wind_degree + ", " + obj.current.wind_dir + ", " + obj.current.pressure + ", " + obj.current.precip + ", " + obj.current.humidity + ", " + obj.current.cloudcover + ", " + obj.current.feelslike + ", " + obj.current.uv_index + ", " + obj.current.visibility + ", " + obj.current.is_day ;
+</script>
+
+</body>
+<footer>
+    <p>Author: Pragati Jain</p>
+</footer>
+</html>
